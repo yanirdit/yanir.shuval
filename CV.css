@@ -1,4 +1,10 @@
 ﻿  
+:root{
+    --red: #ff0000;
+    --green: #5eff00;
+    --blue: #004cff;
+ }
+
 *{
     color: rgb(255, 255, 255);
     
@@ -6,6 +12,10 @@
 .grid-container{
     display: grid;
     background-color: rgb(133, 127, 97);
+    animation-name: cvAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
 }
 .item1{
     text-align: center;
@@ -14,6 +24,8 @@
     grid-row-start:1 ;
     grid-row-end:1 ;
     font-size: 30px;    
+    
+
 }
 .item2{
     text-align: center;
@@ -54,3 +66,13 @@ body{
     height:100%;
     width:100%;
 }    
+
+@keyframes cvAnimation{
+    0% {background-color: var(--red); }
+    20% {background-color: var(--green);}
+    40% {background-color: var(--blue); }
+    60% {background-color: var(--red); }
+    80% {background-color: var(--blue); }
+    100% {background-color: var(--red); }
+
+}
