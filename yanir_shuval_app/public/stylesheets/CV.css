@@ -1,0 +1,78 @@
+﻿  
+:root{
+    --red: #ff0000;
+    --green: #5eff00;
+    --blue: #004cff;
+ }
+
+*{
+    color: rgb(255, 255, 255);
+    
+}
+.grid-container{
+    display: grid;
+    background-color: rgb(133, 127, 97);
+    animation-name: cvAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+.item1{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start:1 ;
+    grid-row-end:1 ;
+    font-size: 30px;    
+    
+
+}
+.item2{
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start:1 ;
+    grid-row-end:1 ;
+    font-size: 30px;
+}
+.item3{
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start:1 ;
+    grid-row-end:1 ;
+    font-size: 30px;
+}
+.item4{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start:2 ;
+    grid-row-end:2 ;
+    font-size: 30px;
+}
+.item5{
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start:2 ;
+    grid-row-end:2 ;
+    font-size: 30px;
+}
+
+body{
+    background: url('http://i.stack.imgur.com/jGlzr.png')  0 0 scroll;
+    background-size: 100% 100%;
+    height:100%;
+    width:100%;
+}    
+
+@keyframes cvAnimation{
+    0% {background-color: var(--red); }
+    20% {background-color: var(--green);}
+    40% {background-color: var(--blue); }
+    60% {background-color: var(--red); }
+    80% {background-color: var(--blue); }
+    100% {background-color: var(--red); }
+
+}
